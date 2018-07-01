@@ -3,6 +3,7 @@
 
 #include "Tipos.h"
 
+
 struct ColaPedidosRepr;
 typedef ColaPedidosRepr *ColaPedidos;
 
@@ -17,5 +18,7 @@ Pedido proximoCP(ColaPedidos cp);
 void desencolarCP(ColaPedidos cp);
 
 void destruirCP(ColaPedidos cp);
+
+void printCP(ColaPedidos cp);
 
 #endif
