@@ -18,7 +18,6 @@ ColaPedidos nuevaCP();
  * Propósito: Devuelve la cantidad de pedidos en la cola.
  * Complejidad: O(1)
  * @param ColaPedidos cp
- * @return int tamanio
  */
 int tamCP(ColaPedidos cp);
 
@@ -35,7 +34,6 @@ void encolarCP(ColaPedidos cp, Pedido p);
  * Precondición: La cola no puede estar vacía (es decir, tamCP(cp) > 0).
  * Complejidad: O(1).
  * @param ColaPedidos cp
- * @return Pedido p
  */
 Pedido proximoCP(ColaPedidos cp);
 
@@ -48,8 +46,7 @@ Pedido proximoCP(ColaPedidos cp);
 void desencolarCP(ColaPedidos cp);
 
 /**
- * Propósito: Libera toda la memoria reservada para la cola de prioridad.
- * Complejidad: (Sin restricciones de eficiencia)
+ * Propósito: Libera toda la memoria reservada para la cola de prioridad (sin restricciones de complejidad).
  * @param ColaPedidos cp
  */
 void destruirCP(ColaPedidos cp);

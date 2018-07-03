@@ -19,7 +19,6 @@ struct PapaNoelRepr {
  * Complejidad: O(1)
  * @return PapaNoel nuevo
  */
-
 PapaNoel iniciarPN() {
     PapaNoel p = new PapaNoelRepr;
     p->pedidosFuturos = nuevaCP();
@@ -192,6 +191,7 @@ void avanzarDiaPN(PapaNoel p) {
 
 /**
  * Propósito: Libera toda la memoria reservada para el sistema (sin restricciones de complejidad).
+ * Complejidad: O(P), donde P es la cantidad total de pedidos cargados en el sistema.
  * @param p
  */
 void finalizarPN(PapaNoel p) {

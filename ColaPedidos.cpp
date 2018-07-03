@@ -32,7 +32,6 @@ ColaPedidos nuevaCP() {
  * Propósito: Devuelve la cantidad de pedidos en la cola.
  * Complejidad: O(1)
  * @param ColaPedidos cp
- * @return int tamanio
  */
 int tamCP(ColaPedidos cp) {
     return cp->raiz == NULL ? 0 : cp->raiz->tam;
@@ -219,8 +218,8 @@ void destruirNodo(Nodo *nodo) {
 }
 
 /**
- * Propósito: Libera toda la memoria reservada para la cola de prioridad.
- * Complejidad: (Sin restricciones de eficiencia)
+ * Propósito: Libera toda la memoria reservada para la cola de prioridad (sin restricciones de eficiencia).
+ * Complejidad: O(P), donde P es la cantidad total de pedidos cargados en la cola.
  * @param ColaPedidos cp
  */
 void destruirCP(ColaPedidos cp) {
